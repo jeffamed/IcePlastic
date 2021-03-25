@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    &__sub {
+        display: inline-flex;
+    }
+    &__item {
+        list-style: none;
+        padding-right: 1rem;
+    }
+    &__link {
+        font-family: $font-primary;
+        font-size: $font-menu-size;
+        font-weight: 600;
+        text-decoration: none;
+        color: $neutral-color;
+        &:hover {
+            color: $details-color;
+        }
+    }
+}

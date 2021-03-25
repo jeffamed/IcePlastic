@@ -1,0 +1,130 @@
+body {
+    background-image: url('../img/icebergplastic2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+    .section {
+        height: 35vh;
+        font-family: $font-primary;
+        color: $neutral-color;
+        text-align: center;
+        padding-left: 15rem;
+        padding-top: 22vh;
+        p {
+            margin: 0;
+        }
+        .text-center {
+            font-size: 80px;
+            font-weight: 800;
+        }
+        .text-header {
+            margin-bottom: 1rem;
+            font-weight: 600;
+            &::before {
+                content: "";
+                display: inline-block;
+                margin-right: 0.5rem;
+                padding-top: 1rem;
+                padding-right: 0.3rem;
+                background-color: $details-color;
+            }
+            &::after {
+                content: "";
+                display: inline-block;
+                margin-left: 0.5rem;
+                padding-top: 1rem;
+                padding-right: 0.3rem;
+                background-color: $details-color;
+            }
+        }
+        .text-second {
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+        .text-final {
+            font-weight: 600;
+        }
+    }
+    .aside {
+        height: 35vh;
+        text-align: right;
+        margin: auto;
+        padding-top: 20vh;
+        .submenu {
+            &__item {
+                list-style: none;
+                padding-top: 1rem;
+                a {
+                    font-family: $font-primary;
+                    color: $neutral-secondary-color;
+                    text-decoration: none;
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        margin-left: 0.7rem;
+                        padding-top: 0.5rem;
+                        padding-right: 5rem;
+                        background-color: transparent;
+                    }
+                    &:hover {
+                        color: $neutral-color;
+                        font-weight: 600;
+                        &::after {
+                            content: "";
+                            display: inline-block;
+                            margin-left: 0.7rem;
+                            padding-top: 0.5rem;
+                            padding-right: 5rem;
+                            background-color: $details-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card {
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 2rem;
+        padding-left: 3rem;
+        &__title {
+            color: $neutral-color;
+            font-family: $font-primary;
+        }
+        &__text {
+            color: $neutral-color;
+            font-size: 12px;
+            font-family: $font-primary;
+        }
+    }
+}
+
+footer {
+    p {
+        color: $neutral-color;
+        text-align: center;
+        &::before {
+            content: "";
+            display: inline-block;
+            margin-right: 0.7rem;
+            padding-top: 0.2rem;
+            padding-right: 15rem;
+            background-color: $neutral-color;
+        }
+        &::after {
+            content: "";
+            display: inline-block;
+            margin-left: 0.7rem;
+            padding-top: 0.2rem;
+            padding-right: 15rem;
+            background-color: $neutral-color;
+        }
+    }
+}

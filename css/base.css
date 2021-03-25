@@ -1,0 +1,185 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__sub {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.menu__item {
+  list-style: none;
+  padding-right: 1rem;
+}
+
+.menu__link {
+  font-family: "Calibri";
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu__link:hover {
+  color: #FFCC00;
+}
+
+body {
+  background-image: url("../img/icebergplastic2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.main .section {
+  height: 35vh;
+  font-family: "Calibri";
+  color: #ffffff;
+  text-align: center;
+  padding-left: 15rem;
+  padding-top: 22vh;
+}
+
+.main .section p {
+  margin: 0;
+}
+
+.main .section .text-center {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.main .section .text-header {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.main .section .text-header::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding-top: 1rem;
+  padding-right: 0.3rem;
+  background-color: #FFCC00;
+}
+
+.main .section .text-header::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+  padding-right: 0.3rem;
+  background-color: #FFCC00;
+}
+
+.main .section .text-second {
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.main .section .text-final {
+  font-weight: 600;
+}
+
+.main .aside {
+  height: 35vh;
+  text-align: right;
+  margin: auto;
+  padding-top: 20vh;
+}
+
+.main .aside .submenu__item {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.main .aside .submenu__item a {
+  font-family: "Calibri";
+  color: #cccbcb;
+  text-decoration: none;
+}
+
+.main .aside .submenu__item a::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.7rem;
+  padding-top: 0.5rem;
+  padding-right: 5rem;
+  background-color: transparent;
+}
+
+.main .aside .submenu__item a:hover {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.main .aside .submenu__item a:hover::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.7rem;
+  padding-top: 0.5rem;
+  padding-right: 5rem;
+  background-color: #FFCC00;
+}
+
+.main .card {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 2rem;
+  padding-left: 3rem;
+}
+
+.main .card__title {
+  color: #ffffff;
+  font-family: "Calibri";
+}
+
+.main .card__text {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Calibri";
+}
+
+footer p {
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.7rem;
+  padding-top: 0.2rem;
+  padding-right: 15rem;
+  background-color: #ffffff;
+}
+
+footer p::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.7rem;
+  padding-top: 0.2rem;
+  padding-right: 15rem;
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=base.css.map */
